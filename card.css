@@ -1,0 +1,126 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color:rgb(197, 241, 252);
+    font-family: 'Karla', sans-serif;
+}
+
+.main-container{
+    display: grid;
+    justify-content: center;
+    align-content: center;
+    flex-flow: column;
+    min-height: 100vh; 
+}
+
+.firstdiv{
+    grid-column: 1 / 3;
+    background-color:white ;
+    padding: 40px;
+    border-radius: 10px 10px 0px 0px;
+}
+.firstdiv h3{
+    margin: 0 0 20px 0;
+    color: hsl(179, 62%, 43%);
+    font-size: 25px;
+}
+.firstdiv .daytitle{
+    color:hsl(71, 73%, 54%);
+    margin:0 0 10px 0;
+    font-weight: bold;
+    font-size: 20px;
+}
+.firstdiv .information{
+    color: hsl(218, 22%, 67%);
+    font-size: 15px;
+}
+.seconddiv{
+    height: 100%;
+    background-color: hsl(179, 62%, 43%);
+    padding: 40px;
+    border-radius: 0px 0px 0px 10px;
+}
+
+.seconddiv .subsciption{
+    color:white;
+    font-weight: bold;
+    margin:0 0 10px 0;
+    font-size:15px;
+}
+.seconddiv .rs{
+    color:white;
+    font-weight: bold;
+    font-size: 30px;
+}
+.seconddiv span{
+    font-size:15px;
+    color: #7ADEE3;
+}
+.seconddiv .access{
+    color: white;
+    font-weight: bold;
+    margin-top: 10px;
+    font-size:15px;
+}
+.seconddiv .signup{
+    width: 100%;
+    margin:20px 0 0 0;
+ }
+ button{
+     width: 100%;
+     height:35px;
+     text-align: center;
+     color: white;
+     background-color: hsl(71, 73%, 54%);
+     cursor: pointer;
+     border:none;
+     border-radius: 5px;
+     font-weight: bold;
+     box-shadow: 0 2px 5px #888;
+ }
+.thirddiv{
+    height: 100%;
+    padding: 40px;
+    background-color: hsl(179, 47%, 51%);
+    border-radius: 0px 0px 10px 0px;
+}
+.thirddiv .thirddivtitle{
+    color: white;
+    font-weight: bold;
+    margin:0 0 10px 0;
+    font-size:15px;
+}
+.thirddiv p{
+    color: #7ADEE3;
+    padding: 2px 0 2px 0;
+    font-weight: bold;
+    font-size:13px;
+}
+.creator {
+    display: grid;
+    text-align: center;
+    justify-content: center;
+    grid-column: 1/3;
+    margin-top: 20PX;
+}
+@media only screen and (max-width: 767px){
+    .main-container{
+        display: flex;
+        flex-flow: column;
+        margin: 30px;
+        
+    }
+    .seconddiv{
+        width: 100%;
+        border-radius: 0;
+    }
+    .thirddiv{
+        width: 100%;
+        border-radius: 0px 0px 10px 10px;
+    }
+    
+}
